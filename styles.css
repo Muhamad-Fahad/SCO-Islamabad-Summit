@@ -8,7 +8,7 @@
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
-    color: #272a31;
+    color: #333333; /* Dark grey color for all text */
     margin: 0;
     padding: 0;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .social-links a {
-    color: #d3d3d3;
+    color: #585858;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 300;
@@ -40,93 +40,104 @@ body {
 
 .main-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Change from flex-end to space-between */
     align-items: center;
-    padding: 10px 10%;
+    padding: 10px 5%;
     background-color: white;
     border-bottom: 1px solid #d3d3d3;
+    height: 60px;
 }
 
 .logo {
-    width: 60px;  /* Adjust this value as needed */
-    height: 60px; /* Keep this the same as the width */
-    overflow: hidden;
-    border-radius: 50%;
-    background-color: white; /* Add this to see the circular boundary */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Push the logo to the left */
 }
 
 .logo-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Changed from 'cover' to 'contain' */
-    object-position: center;
+    height: 40px; /* Adjust this value as needed */
+    width: auto;
 }
 
 .nav-links {
     display: flex;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li {
-    margin-left: 30px;
+    margin-left: 30px; /* Increased spacing between items */
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #272a31;
-    font-weight: 700;
+    color: #585858;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .cta-button {
     border: 2px solid #ec5242;
-    padding: 10px 15px;
+    padding: 8px 12px;
     color: #ec5242 !important;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ec5242;
+    color: white !important;
 }
 
 /* Hero Section */
 #hero {
-    background-image: url('download.jpeg');
+    background-image: url('elegant-white-overlap-shade-background-with-line-golden-elements-realistic-luxury-paper-cut-style-3d-modern-concept-free-vector.jpg'); /* Use your original background image here */
     background-size: cover;
     background-position: center;
     padding: 100px 10%;
     text-align: left;
+    color: #ec5242; /* Dark grey for other text */
 }
 
-#hero h1 {
-    font-size: 2.5rem;
-    color: #ec5242;
-    margin-bottom: 0;
-    font-weight: 700;
-}
 
-#hero h2 {
-    font-size: 3.5rem;
-    color: #ec5242;
-    margin-top: 10px;
-    margin-bottom: 30px;
+
+.text-image {
+    font-size: 5rem;
     font-weight: 900;
     text-transform: uppercase;
+    background: url('pexels-scottwebb-532563.jpg'); /* Image for text effect */
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Use this for WebKit browsers */
 }
 
 .event-description {
     font-size: 1rem;
     line-height: 1.5;
-    color: #a0a0a0;
-    padding: 20px;
-    margin-bottom: 30px;
     max-width: 600px;
+    margin-bottom: 30px;
+    color: #353434; /* Dark grey for readability */
 }
 
 .event-date, .event-location {
     font-size: 1.2rem;
     margin: 5px 0;
     font-weight: 700;
-    color: #a0a0a0;
+    color: #353434; /* Dark grey for readability */
 }
 
 /* Program Section */
 #program {
     background-color: #272a31;
+    background-image: url('Black\ Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
     color: #d3d3d3;
     padding: 50px 10%;
     text-align: center;
@@ -134,7 +145,6 @@ body {
 
 #program h2 {
     font-weight: 400;
-    color: #d3d3d3;
 }
 
 .program-grid {
@@ -157,34 +167,58 @@ body {
 /* Speakers Section */
 #speakers {
     padding: 50px 10%;
-    background-color: #d3d3d3;
+    padding-left: calc(10% + 80px); /* Increase left padding */
 }
 
 #speakers h2 {
-    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
     color: #272a31;
 }
 
 .speakers-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 50px;
+    gap: 30px 60px; /* Increase horizontal gap */
+}
+
+.speaker-item {
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+}
+
+.speaker-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    align-self: flex-start; /* Keep image at the top */
+}
+
+.speaker-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Push content to the bottom */
 }
 
 .speaker-item h3 {
-    font-weight: 700;
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
     color: #272a31;
 }
 
 .speaker-item h4 {
-    font-weight: 300;
+    margin: 0 0 10px 0;
     color: #ec5242;
+    font-size: 0.9em;
 }
 
 .speaker-item p {
-    font-weight: 300;
-    color: #272a31;
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #585858;
 }
 
 /* Partners Section */
@@ -207,6 +241,13 @@ body {
     margin-top: 50px;
 }
 
+/* For country flags */
+.partner-item img {
+    width: 100px;  /* Set a fixed width */
+    height: 60px;  /* Set a fixed height */
+    object-fit: contain; /* This will fit the entire image within the dimensions */
+}
+
 /* Footer */
 footer {
     background-color: #d3d3d3;
@@ -225,5 +266,23 @@ footer {
 
 .footer-content p {
     font-weight: 300;
-    color: #272a31;
+    color: #585858;
+}
+
+h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: 600;
+    text-transform: uppercase;
+    background: url('pexels-scottwebb-532563.jpg'); /* Image for text effect */
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Add this new rule */
+.text-container {
+    color: #333333; /* Dark grey color */
 }

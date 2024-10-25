@@ -8,20 +8,20 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     const speakers = [
-        { name: 'Xi Jinping', role: 'President of China', image: 'speaker1.jpg', bio: 'Leader of the People\'s Republic of China and a key figure in SCO.' },
-        { name: 'Vladimir Putin', role: 'President of Russia', image: 'speaker2.jpg', bio: 'Russian statesman and a prominent voice in SCO affairs.' },
-        { name: 'Narendra Modi', role: 'Prime Minister of India', image: 'speaker3.jpg', bio: 'Indian politician leading one of the largest SCO member states.' },
-        { name: 'Shehbaz Sharif', role: 'Prime Minister of Pakistan', image: 'speaker4.jpg', bio: 'Pakistani leader and host of the SCO Summit 2024.' },
-        { name: 'Kassym-Jomart Tokayev', role: 'President of Kazakhstan', image: 'speaker5.jpg', bio: 'Kazakh politician and an important figure in Central Asian affairs.' },
-        { name: 'Emomali Rahmon', role: 'President of Tajikistan', image: 'speaker6.jpg', bio: 'Tajik leader with extensive experience in SCO cooperation.' }
+        { name: 'Xi Jinping', role: 'President of China', image: 'Xijinping.jpeg', bio: 'Leader of the People\'s Republic of China and a key figure in SCO.' },
+        { name: 'Vladimir Putin', role: 'President of Russia', image: 'Putin.jpg', bio: 'Russian statesman and a prominent voice in SCO affairs.' },
+        { name: 'Narendra Modi', role: 'Prime Minister of India', image: 'Modi.jpeg', bio: 'Indian politician leading one of the largest SCO member states.' },
+        { name: 'Shehbaz Sharif', role: 'Prime Minister of Pakistan', image: 'Sharif.jpeg', bio: 'Pakistani leader and host of the SCO Summit 2024.' },
+        { name: 'Kassym-Jomart Tokayev', role: 'President of Kazakhstan', image: 'Kassym-Jomart_Tokayev.jpg', bio: 'Kazakh politician and an important figure in Central Asian affairs.' },
+        { name: 'Emomali Rahmon', role: 'President of Tajikistan', image: 'Emomali.jpeg', bio: 'Tajik leader with extensive experience in SCO cooperation.' }
     ];
 
     const partners = [
-        { name: 'China', logo: 'china-logo.png' },
-        { name: 'Russia', logo: 'russia-logo.png' },
-        { name: 'India', logo: 'india-logo.png' },
-        { name: 'Pakistan', logo: 'pakistan-logo.png' },
-        { name: 'Kazakhstan', logo: 'kazakhstan-logo.png' }
+        { name: 'China', logo: 'china flag.png' },
+        { name: 'Russia', logo: 'russia flag.png' },
+        { name: 'India', logo: 'India flag.png' },
+        { name: 'Pakistan', logo: 'Pk Flag.png' },
+        { name: 'Kazakhstan', logo: 'Kazakhastan flag.png' }
     ];
 
     // Populate program items
